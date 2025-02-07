@@ -6,6 +6,19 @@ A blog engine written in Rust, powered by SurrealDB. This project is responsible
 
 ## Running the Project
 
+```bash
+nix develop
+
+./db.sh
+
+surrealdb-migrations apply
+
+tailwindcss -i input.css -o ./style/output.css --watch
+
+cargo leptos watch
+```
+
+
 To get started with running the project locally, follow the steps below. These commands will compile your stylesheets and set up a development server that watches for changes.
 
 First, run the following script to set up your Surreal database:
